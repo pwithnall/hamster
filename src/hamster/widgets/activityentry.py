@@ -448,12 +448,12 @@ class ActivityEntry(gtk.Entry):
         entry_x, entry_y = self.get_window().get_origin()[1:]
         x, y = entry_x + entry_alloc.x, entry_y + entry_alloc.y + entry_alloc.height
 
-        self.popup.show_all()
+        #self.popup.show_all()
 
         self.update_suggestions(text)
 
-        tree_w, tree_h = self.complete_tree.get_size_request()
+        #tree_w, tree_h = self.complete_tree.get_size_request()
 
-        self.popup.move(x, y)
-        self.popup.resize(entry_alloc.width, tree_h)
-        self.popup.show_all()
+        #self.popup.move(x, y)
+        #self.popup.resize(entry_alloc.width, tree_h)
+        #self.popup.show_all()
